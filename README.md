@@ -22,3 +22,7 @@ $ brew install nodejs
 ```
 
 [Видео о REPL](https://www.youtube.com/watch?v=d4Sadokt_Hg&feature=youtu.be)
+
+### NPM
+[package.json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)<br><br>
+Обратите внимание на ключ "type" в JSON. Эту часть нужно добавить самостоятельно, исправив файл. Она нужна для работы системы импортов.
