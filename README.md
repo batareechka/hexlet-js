@@ -1,8 +1,10 @@
 # hexlet-js
+
 Задание по курсу JS: Настройка окружения<br>
 https://ru.hexlet.io/courses/js-setup-environment
 
 ## Введение
+
 [Установка Ubuntu на Windows](https://docs.microsoft.com/ru-ru/windows/wsl/install-win10)<br>
 [Установка GIT на Windows](https://docs.microsoft.com/ru-ru/windows/wsl/tutorials/wsl-git)<br>
 [Менеджер версий языков](https://guides.hexlet.io/version_managers/)
@@ -10,6 +12,7 @@ https://ru.hexlet.io/courses/js-setup-environment
 ## Установка JavaScript
 
 ### Ubuntu или Ubuntu on Windows
+
 ```
 $ sudo apt-get install curl
 $ curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -17,6 +20,7 @@ $ sudo apt install -y nodejs
 ```
 
 ### macOS
+
 ```
 $ brew install nodejs
 ```
@@ -24,10 +28,12 @@ $ brew install nodejs
 [Видео о REPL](https://www.youtube.com/watch?v=d4Sadokt_Hg&feature=youtu.be)
 
 ## NPM
+
 [package.json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json)<br><br>
 Обратите внимание на ключ "type" в JSON. Эту часть нужно добавить самостоятельно, исправив файл. Она нужна для работы системы импортов.
 
 ## Зависимости
+
 ```js
 // Так будет происходить поиск файла lodash.js в текущей директории
 import _ from "./lodash";
@@ -48,10 +54,30 @@ $ npm ci
 ## Зависимости для разработки
 
 ### npm install
+
 ```
 # Вот теперь зависимости из devDependencies устанавливаться не будут
 $ npm install --production
 
 # Продакшен режим можно задать и с помощью переменной окружения
 $ NODE_ENV=production npm install
+```
+
+## Глобальная установка пакетов
+
+Флаг `-g` говорит о том, что пакет нужно установить глобально. Выполнять эту команду можно из любого места файловой системы. npm добавляет этот пакет в специальную директорию, которая доступна для всех пользователей системы. Узнать ее расположение можно еще одной командой npm:
+
+```
+npm config ls -l
+...
+prefix = ""/Users/anastasiia/.nvm/versions/node/v14.15.4"
+...
+```
+
+## NPX
+
+Для упрощения запуска Node.js поставляется вместе с еще одной утилитой – npx. Она помогает запускать программы установленные локально без необходимости указывать полный путь до исполняемого файла:
+
+```
+hexlet-js$ npx prettier --write .
 ```
