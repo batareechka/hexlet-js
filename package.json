@@ -1,0 +1,23 @@
+{
+  "name": "hexlet",
+  "version": "1.0.0",
+  "description": "Задание по курсу JS: Настройка окружения<br> https://ru.hexlet.io/courses/js-setup-environment",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batareechka/hexlet-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batareechka/hexlet-js/issues"
+  },
+  "homepage": "https://github.com/batareechka/hexlet-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
