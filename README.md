@@ -44,3 +44,14 @@ $ npm ci
 
 [Библиотека или свое решение](https://ru.hexlet.io/blog/posts/sovershennyy-kod-biblioteka-ili-svoe-reshenie)<br>
 [Отличие npm ci от npm install](https://medium.com/better-programming/npm-ci-vs-npm-install-which-should-you-use-in-your-node-js-projects-51e07cb71e26)
+
+## Зависимости для разработки
+
+### npm install
+```
+# Вот теперь зависимости из devDependencies устанавливаться не будут
+$ npm install --production
+
+# Продакшен режим можно задать и с помощью переменной окружения
+$ NODE_ENV=production npm install
+```
